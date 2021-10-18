@@ -1,0 +1,424 @@
+@charset "UTF_8";
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=- THIS WEBSITE DESIGNED AND BUILT WITH LOVING CARE =-=-=-
+-=-=-=-- ENTIRELY BY HAND JUST FOR YOU BY IAN BESLER =-=-=-=-=
+=-=-=-=-=-=-=-=-= HTTPS://WWW.IANBESLER.COM =-=-=-=-=-=-=-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*/
+
+/*
+_______________________________
+_______________________________
+__________ CSS RESET __________
+_______________________________
+_______________________________
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,body {
+	scroll-behavior: smooth;
+	width: 100%;
+}
+
+	body {
+		font-family: 'Work Sans',sans-serif;
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		font-weight: normal;
+	}
+
+	mark {
+		color: white;
+		background-color: #ffc0cb;
+		font-weight: bold;
+	}
+
+	.text-align-center {
+		text-align: center;
+	}
+
+/*
+______________________________________________
+______________________________________________
+__________ FOCUS AND TEXT SELECTION __________
+______________________________________________
+______________________________________________
+*/
+
+:focus {
+	outline: 0.1em solid #ffc0cb;
+}
+
+::selection {
+  background: #ffc0cb;
+}
+
+	::-moz-selection {
+	  background: #ffc0cb;
+	}
+
+/*
+____________________________
+____________________________
+__________ HEADER __________
+____________________________
+____________________________
+*/
+
+header {
+	position: fixed;
+	margin-top: 2.2%;
+	margin-left: 6%;
+	z-index: 2;
+}
+
+	header div#corner-box {
+		display: inline-block;
+		background-color: rgba(255,255,255,0.9);
+	}
+
+	h1,h2 {
+		font-size: 48pt;
+	}
+
+		h1 a:link {
+			color: #ffc0cb;
+		}
+
+		h1 a:visited {
+			color: #ffc0cb;
+		}
+
+		h1 a:hover {
+			color: #ffc0cb;
+			background-color: #0ff;
+		}
+
+		h1 a:active {
+			color: #ffc0cb;
+		}
+
+		header a:link,header a:visited,header a:hover,header a:active {
+			text-decoration: none;
+		}
+
+/*
+_________________________
+_________________________
+__________ NAV __________
+_________________________
+_________________________
+*/
+
+nav {
+	display: inline-block;
+	background-color: rgba(255,255,255,0.9);
+}
+
+	nav ul {
+		list-style-type: none;
+	}
+
+		nav ul li {
+			display: inline-block;
+		}
+
+			nav ul li a {
+				font-size: 48pt;
+				margin-left: 4.13vw;
+				display: block;
+				transition: background-color 1s;	
+			}
+
+			nav ul li a:link {
+				color: #ffc0cb;
+			}
+
+			nav ul li a:visited {
+				color: #ffc0cb;
+			}
+
+				.nav-highlight {
+					background-color: #0ff;
+				}
+
+			nav ul li a:hover,nav ul li a:focus {
+				background-color: #0ff;
+			}
+
+			nav ul li a:active {
+				color: #ffc0cb;
+				background-color: #000; 
+			}
+
+#stroke-wavy-pink {
+	width: 87vw;
+}
+
+/*
+__________________________
+__________________________
+__________ MAIN __________
+__________________________
+__________________________
+*/
+
+main {
+	text-align: center;
+}
+
+	p a:link,figcaption a:link {
+		color: #000;
+	}
+
+	p a:visited,figcaption a:visited {
+		color: #000;
+	}
+
+	p a:hover,figcaption a:hover {
+		color: #fff;
+		background-color: #ffc0cb;
+		text-decoration: underline wavy #fff;
+	}
+
+	p a:active,figcaption a:active {
+		color: #000;
+		text-decoration: underline wavy #000;
+	}
+
+section {
+		min-height: 64vh;
+		padding-top: 36vh;
+	}
+
+
+/*
+____________________
+_____ SPLASH _______
+____________________
+*/
+
+#splash h3 a:link,#splash h3 a:visited,#splash h3 a:hover,#splash h3 a:active {
+	color: #fff;
+	text-decoration: none;
+}
+
+h3 {
+	font-size: 12em;
+}
+
+h4 {
+	font-size: 6em;
+}
+
+.white-skewed-headline {
+	margin: auto;
+	display: inline-block;
+	text-align: center;
+	transform: skew(0deg,-15deg);
+	text-shadow: 0.02em 0.02em 0 #0ff, 0.04em 0.04em 0 #fff;
+		transition: letter-spacing 0.2s, transform 0.2s, text-shadow 0.2s;
+}
+	
+	.white-skewed-headline:hover {
+		cursor: pointer;
+		letter-spacing: 0.04em;
+		transform: skew(2deg,-20deg);
+		text-shadow: 0.04em 0.04em 0 #0ff, 0.08em 0.08em 0 #fff;
+	}
+
+		.white-skewed-headline:active {
+			cursor: grab;
+			letter-spacing: 0.08em;
+			transform: skew(4deg,-22deg);
+			text-shadow: 0.06em 0.06em 0 #0ff, 0.12em 0.12em 0 #fff;
+		}
+
+	.white-skewed-headline mark {
+		line-height: 0;
+		box-shadow: 0.02em 0.02em 0 #fff;
+		border-left: 0.2em solid  #ffc0cb;
+		border-right:  0.2em solid  #ffc0cb;
+			transition: box-shadow 0.2s;
+	}
+		.white-skewed-headline mark:hover {
+			box-shadow: 0.06em 0.06em 0 #fff;
+		}
+
+			.white-skewed-headline mark:active {
+				box-shadow: 0.1em 0.1em 0 #fff;
+			}
+
+		.white-skewed-headline mark a:link {
+			color: white;
+		}
+
+/*
+___________________________
+___________________________
+__________ ABOUT __________
+___________________________
+___________________________
+*/
+
+#about article {
+	transform: translateY(-3em);
+	width: 50%;
+	margin: 0 4% 0 auto;
+	text-align: left;
+	font-size: 2em;
+}
+
+	p {
+		margin-top: 2em;
+	}
+
+		p:first-child {
+			margin-top: 0;
+		}
+
+/*
+__________________________________
+__________________________________
+__________ GET STARTED  __________
+__________________________________
+__________________________________
+*/
+
+h5 {
+	font-size: 24pt;
+	background-color: pink;
+	margin-bottom: 1em;
+	padding: 0.2em;
+}
+
+#get-started ol {
+	margin-top: 2em;
+	counter-reset: item;
+	list-style-type: none;
+}
+
+#get-started ol li:before {
+	content: 'Step ' counter(item, decimal) '. ';
+	counter-increment: item;
+}
+
+	figure {
+		width: 48%;
+		height: 19vw;
+		display: inline-block;
+	}
+
+		figure {
+			margin-bottom: 4%;
+			margin-left: 2%;
+		}
+
+		figure:nth-of-type(odd) {
+			margin-left: 0;
+		}
+
+	iframe {
+		border: 0.5em solid #ffc0cb;
+		border-width: 0;
+		width: 100%;
+		height: 100%;
+		box-shadow: 0.4vw 0.4vw 0 #ffc0cb;
+			transition: box-shadow 0.1s;
+	}
+
+		iframe:hover {
+			box-shadow: 0.8vw 0.8vw 0 #fff;
+		}
+
+	figcaption {
+		position: relative;
+		z-index: 2;
+	}
+
+#get-started li,#get-started h6,#get-started p,#get-started code  {
+	font-size: 18pt;
+}
+
+#get-started li {
+	margin-bottom: 2em;
+}
+
+	.terminal {
+		font-size: 14pt;
+		margin: 1em;
+		padding: 1em;
+		background-color: black;
+	}
+
+	code {
+		display: block;
+		color: pink;
+		margin-top: 0.2em;
+	}
+
+.dont-break-out {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+aside {
+	margin: 5em 0;
+	text-align: center;
+}
+
+/*
+______________________
+_____ SESSIONS _______
+______________________
+*/
+
+article {
+	margin: auto;
+	width: 70%;
+	padding: 20vh 5vh;
+	text-align: left;
+}
+
+summary {
+	border: 0.1em solid #ffc0cb;
+	margin-bottom: 1em;
+	transition: background-color 0.5s;
+	padding: 2%;
+	color: #ffc0cb;
+	font-size: 3.5em;
+}
+
+	summary:hover {
+		cursor: pointer;
+		background-color: #ffc0cb;
+		color: #0ff;
+	}
+	
+
+
+/*
+____________________________________________
+____________________________________________
+__________________ FOOTER __________________
+____________________________________________
+____________________________________________
+*/
+
+footer {
+	padding: 2em;
+	text-align: center;
+}
