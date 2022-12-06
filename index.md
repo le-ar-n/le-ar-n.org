@@ -1,0 +1,12 @@
+<!-- ---
+title: Home
+layout: default
+--- -->
+
+<!-- <p><mark>L.E.A.R.N.</mark> is a platform dedicated to beginner-friendly creative coding tutorials and exercises for building architecture with robots.</p>
+
+		<p>In these tutorials, we will introduce computational methods for architecture, fabrication & construction, incentivising computational literacy. Students will learn the theoretical background and basic implementation details of fundamental datastructures and algorithms, and to plan and control robot tasks in CAD environments using the <a href="https://compas.dev/">COMPAS</a> and <a href="https://gramaziokohler.github.io/compas_fab/latest/">COMPAS FAB</a> framework, and other open-source libraries.</p>
+
+		<p>We want to provide access to our tutorials for as many students as possible. If you are affiliated with TUM or Princeton, you can register for the class. If you are a student from another university or simply interested in Digital Fabrication using robots, you can simply access the tutorial videos through this webpage.</p> -->
+
+Testing!
