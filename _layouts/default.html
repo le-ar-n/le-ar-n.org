@@ -124,128 +124,7 @@ ____________________________________________________
 	<h3 class="white-skewed-headline"><mark><a href="#about">L.E.A.R.N.</a></mark></h3>
 </section>
 
-<!--
-___________________________________________________
-___________________________________________________
-__________________ ABOUT SECTION __________________
-___________________________________________________
-___________________________________________________
--->
-<section id="about">
-	<h4 class="white-skewed-headline"><mark>Creative Coding<br />for Newbies!</mark></h4>
-	<article>
-		{{ content }}
-	</article>
-</section>
-
-<!--
-_________________________________________________________
-_________________________________________________________
-__________________ GET STARTED SECTION __________________
-_________________________________________________________
-_________________________________________________________
--->
-<section id="get-started">
-	<h4 class="white-skewed-headline"><mark>Get Started</mark></h4>
-	<article>
-		<figure>
-			<iframe src="https://player.vimeo.com/video/535598169" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			<figcaption><a href="https://vimeo.com/535598169" target="_blank">Just Start #1</a></figcaption>
-		</figure>
-
-		<figure>
-			<iframe src="https://player.vimeo.com/video/535598027" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			<figcaption><a href="https://vimeo.com/535598027" target="_blank">Just Start #2</a></figcaption>
-		</figure>
-
-		<figure>
-			<iframe src="https://player.vimeo.com/video/535598646" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			<figcaption><a href="https://vimeo.com/535598646" target="_blank">Python in VS Code</a></figcaption>
-		</figure>
-
-		<figure>
-			<iframe src="https://player.vimeo.com/video/535598773" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			<figcaption><a href="https://vimeo.com/535598773" target="_blank">Python in Rhino and Grasshopper</a></figcaption>
-		</figure>
-		<ol>
-			<li>
-				<h5>Setting up the Anaconda environment with COMPAS</h5>
-
-				<p>Execute the commands below in Anaconda Prompt:</p>
-				<div class="terminal">
-					<code>(base) conda config --add channels conda-forge</code>
-				</div>
-
-				<h6>Windows</h6>
-				<div class="terminal">
-					<code>(base) conda create -n learn python=3.8 compas_fab=0.17 --yes</code>
-					<code>(base) conda activate learn</code>
-				</div>
-
-				<h6>Mac</h6>
-				<div class="terminal">
-					<code>(base) conda create -n learn python=3.8 compas_fab=0.17 python.app --yes</code>
-					<code>(base) conda activate learn</code>
-				</div>
-
-				<h6>Verify Installation</h6>
-				<div class="terminal">
-					<code>(learn) pip show compas_fab ####</code>
-					<code>Name: compas-fab</code>
-					<code>Version: 0.13.1</code>
-					<code>Summary: Robotic fabrication package for the COMPAS Framework</code>
-					<code>…</code>
-				</div>
-				
-				<h6>Install on Rhino</h6>
-				<div class="terminal">
-					<code>(learn) python -m compas_rhino.install</code>
-				</div>
-				
-				<p>NOTE: This installs to Rhino 6.0, use -v 5.0 if needed.</p>
-			</li>
-
-			<li>
-				<h5>Installation of Dependencies</h5>
-				
-				<div class="terminal">
-					<code>(learn) conda install git</code>
-				</div>
-				
-				<h6>Assembly Information Model</h6>
-				<div class="terminal">
-					<code class="dont-break-out">(learn) python -m pip install git+https://github.com/augmentedfabricationlab/assembly_information_model@master#egg=assembly_information_model</code>
-					<code>(learn) python -m compas_rhino.install -p assembly_information_model</code>
-				</div>
-				
-				<h6>UR Fabrication Control</h6>
-				<div class="terminal">
-					<code class="dont-break-out">(learn) python -m pip install git+https://github.com/augmentedfabricationlab/ur_fabrication_control@master#egg=ur_fabrication_control</code>
-					<code>(learn) python -m compas_rhino.install -p ur_fabrication_control</code>
-				</div>
-			</li>
-
-			<li>
-				<h5>Cloning the Course Repository</h5>
-			
-				<p>Create a workspace directory:</p>
-
-				<div class="terminal">
-					<code>C:\Users\YOUR_USERNAME\workspace</code>
-				</div>
-
-				<p>Then open Github Desktop and clone the following repository into you workspace folder: <a href="https://github.com/le-ar-n/le-ar-n">L.E.A.R.N. repository</a></p>
-			</li>
-
-			<aside>
-				<h4 class="white-skewed-headline display-block"><mark>Voilà!</mark></h4>
-			</aside>
-
-			<p>You can now go to VS Code, Rhino or Grasshopper to run the example files!</p>
-		
-	</article>
-
-</section>
+{{ content }}
 
 <!--
 ______________________________________________________
@@ -257,58 +136,21 @@ ______________________________________________________
 <section id="sessions">
 	<h3 class="white-skewed-headline"><mark>Sessions</mark></h3>
 	<article>
+		{% for session in site.sessions %}
 		<details>
-			<summary>Python Basics</summary>
-			<h5>Quick start on Python</h5>
-			<h5 class="text-align-center">😎 😎 😎 View the Slides: <a href="https://docs.google.com/presentation/d/1WHFK_gnQg8jOp2D4GcX2HFWUhVAizvreffQBoUX3fVA/edit?usp=sharing">Python Basics</a> 😎 😎 😎</h5>
-			
-			<figure>
-				<iframe src="https://player.vimeo.com/video/535591053" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				<figcaption><a href="https://vimeo.com/535591053" target="_blank">Datatypes, Operators, and Conditionals</a></figcaption>
-			</figure>
-
-			<figure>
-				<iframe src="https://player.vimeo.com/video/535581175" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				<figcaption><a href="https://vimeo.com/535581175" target="_blank">Lists, Tuples, and Dictionaries</a></figcaption>
-			</figure>
-
-			<figure>
-				<iframe src="https://player.vimeo.com/video/535594786" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				<figcaption><a href="https://vimeo.com/535594786" target="_blank">Loops</a></figcaption>
-			</figure>
-
-			<figure>
-				<iframe src="https://player.vimeo.com/video/535595671" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				<figcaption><a href="https://vimeo.com/535595671" target="_blank">Functions</a></figcaption>
-			</figure>
-
-			<figure>
-				<iframe src="https://player.vimeo.com/video/535597148" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				<figcaption><a href="https://vimeo.com/535597148" target="_blank">Classes</a></figcaption>
-			</figure>
+			<summary>{{ session.title }}</summary>
+			<h5>{{ session.description }}</h5>
+			<h5 class="text-align-center">😎 😎 😎 View the Slides: <a href="{{ session.slides-link }}">{{ session.title }}</a> 😎 😎 😎</h5>
+			{% for link in session.vid-links %}
+			{% assign i = forloop.index | minus:1 %}
+				<figure>
+					<iframe src="https://player.vimeo.com/video/{{ link }}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<figcaption><a href="https://vimeo.com/{{ link }}" target="_blank">{{ session.vid-titles[i] }}</a></figcaption>
+				</figure>
+			{% endfor %}
+			{{ session.content | markdownify }}
 		</details>
-		
-		<details>
-			<summary>Geometry</summary>
-			<h5>COMPAS geometry</h5>
-			<h5 class="text-align-center">😎 😎 😎 View the Slides: <a href="https://docs.google.com/presentation/d/1B_O2qr_oV_Olf64CaTKgPp1fjy4Z61LwsM8OHDhlvyQ/edit?usp=sharing">COMPAS Geometry</a> 😎 😎 😎</h5>
-
-			<figure>
-				<iframe src="https://player.vimeo.com/video/538296898" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				<figcaption><a href="https://vimeo.com/538296898" target="_blank">Vectors</a></figcaption>
-			</figure>
-
-			<figure>
-				<iframe src="https://player.vimeo.com/video/538313181" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				<figcaption><a href="https://vimeo.com/538313181" target="_blank">Point Cloud and Plotters</a></figcaption>
-			</figure>
-
-			<figure>
-				<iframe src="https://player.vimeo.com/video/522334678" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				<figcaption><a href="https://vimeo.com/522334678" target="_blank">Point Cloud in Grasshopper</a></figcaption>
-			</figure>
-			
-		</details>
+		{% endfor %}
 		
 		<details>
 			<summary>Data Structures</summary>

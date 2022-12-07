@@ -1,1 +1,6 @@
 name: LE-AR-N
+collections:
+  sessions:
+    order:
+      - python-basics.md
+      - geometry.md
