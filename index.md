@@ -5,11 +5,13 @@ layout: default
 <!-- ABOUT -->
 {% capture about %}
 
+<!-- Edit below to change body text of About -->
 <mark>L.E.A.R.N.</mark> is a platform dedicated to beginner-friendly creative coding tutorials and exercises for building architecture with robots.
 
 In these tutorials, we will introduce computational methods for architecture, fabrication & construction, incentivising computational literacy. Students will learn the theoretical background and basic implementation details of fundamental datastructures and algorithms, and to plan and control robot tasks in CAD environments using the [COMPAS](https://compas.dev/) and [COMPAS FAB](https://gramaziokohler.github.io/compas_fab/latest/) framework, and other open-source libraries.
 
 We want to provide access to our tutorials for as many students as possible. If you are affiliated with TUM or Princeton, you can register for the class. If you are a student from another university or simply interested in Digital Fabrication using robots, you can simply access the tutorial videos through this webpage.
+<!-- END OF SECTION -->
 
 {% endcapture %}
 
@@ -17,6 +19,7 @@ We want to provide access to our tutorials for as many students as possible. If 
 {% capture get-started %}
 
 <!-- Keep these figures unindented, Jekyll interprets tabbed HTML as code blocks -->
+<!-- Iteratively get the videos -->
 {% for video in site.data.get-started %}
 <figure>
     <iframe src="https://player.vimeo.com/video/{{ video.link }}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -24,6 +27,7 @@ We want to provide access to our tutorials for as many students as possible. If 
 </figure>
 {% endfor %}
 
+<!-- Edit below to change the text of Get Started -->
 1. ##### Setting up the Anaconda environment with COMPAS
 
 Execute the commands below in Anaconda Prompt:
@@ -86,11 +90,11 @@ C:\Users\YOUR_USERNAME\workspace
 Then open Github Desktop and clone the following repository into you workspace folder: [L.E.A.R.N. repository](https://github.com/le-ar-n/le-ar-n)
 
 <!-- HTML for the fun skewed text -->
-<aside>
-    <h4 class="white-skewed-headline display-block"><mark>Voilà!</mark></h4>
-</aside>
+<aside> <h4 class="white-skewed-headline display-block"><mark>Voilà!</mark></h4> </aside>
 
 You can now go to VS Code, Rhino or Grasshopper to run the example files!
+
+<!-- END OF SECTION -->
 
 {% endcapture %}
 
