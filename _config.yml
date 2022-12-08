@@ -4,3 +4,9 @@ collections:
     order:
       - python-basics.md
       - geometry.md
+      - data-structures.md
+      - assembly-information-model.md
+      - am-information-model.md
+      - xr-assembly.md
+      - robotic-fabrication-assembly.md
+      - robotic-fabrication-control.md

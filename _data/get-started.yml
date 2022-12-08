@@ -1,15 +1,11 @@
-- embed: https://player.vimeo.com/video/535598169
-  link: https://vimeo.com/535598169
-  text: "Just Start #10000"
+- link: 535598169
+  text: "Just Start #1"
 
-- embed: https://player.vimeo.com/video/535598027
-  link: https://vimeo.com/535598027
+- link: 535598027
   text: "Just Start #2"
 
-- embed: https://player.vimeo.com/video/535598646
-  link: https://vimeo.com/535598646
+- link: 535598646
   text: "Python in VS Code"
 
-- embed: https://player.vimeo.com/video/535598773
-  link: https://vimeo.com/535598773
+- link: 535598773
   text: "Python in Rhino and Grasshopper"

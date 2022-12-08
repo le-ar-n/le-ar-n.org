@@ -10,5 +10,4 @@ vid-titles:
 - Vectors
 - Point Cloud and Plotters
 - Point Cloud in Grasshopper
-has-content: false
 ---

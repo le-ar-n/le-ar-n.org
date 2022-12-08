@@ -19,8 +19,8 @@ We want to provide access to our tutorials for as many students as possible. If 
 <!-- Keep these figures unindented, Jekyll interprets tabbed HTML as code blocks -->
 {% for video in site.data.get-started %}
 <figure>
-    <iframe src="{{ video.embed }}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    <figcaption><a href="{{ video.link }}" target="_blank">{{ video.text }}</a></figcaption>
+    <iframe src="https://player.vimeo.com/video/{{ video.link }}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <figcaption><a href="https://player.vimeo.com/video/{{ video.link }}" target="_blank">{{ video.text }}</a></figcaption>
 </figure>
 {% endfor %}
 
