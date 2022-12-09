@@ -136,7 +136,8 @@ ______________________________________________________
 <section id="sessions">
 	<h3 class="white-skewed-headline"><mark>Sessions</mark></h3>
 	<article>
-		{% for session in site.sessions %}
+		{% assign sessions = site.sessions | sort: "order" %}
+		{% for session in sessions %}
 		<details>
 			<summary>{{ session.title }}</summary>
 			<h5>{{ session.description }}</h5>
