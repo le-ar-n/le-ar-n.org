@@ -14,6 +14,7 @@ vid-titles:
 - Loops
 - Functions
 - Classes
+order: 1
 ---
 
 <!-- CONTENT -->

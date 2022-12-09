@@ -1,6 +1,16 @@
 ---
 title: Home
 layout: default
+vid-links:
+- 535598169
+- 535598027
+- 535598646
+- 535598773
+vid-titles:
+- "Just Start #1"
+- "Just Start #2"
+- "Python in VS Code"
+- "Python in Rhino and Grasshopper"
 ---
 <!-- ABOUT -->
 {% capture about %}
@@ -18,12 +28,13 @@ We want to provide access to our tutorials for as many students as possible. If 
 <!-- GET STARTED -->
 {% capture get-started %}
 
-<!-- Keep these figures unindented, Jekyll interprets tabbed HTML as code blocks -->
+<!-- Keep these figure tags unindented, Jekyll interprets tabbed HTML as MD code blocks -->
 <!-- Iteratively get the videos -->
-{% for video in site.data.get-started %}
+{% for link in page.vid-links %}
+{% assign i = forloop.index | minus:1 %}
 <figure>
-    <iframe src="https://player.vimeo.com/video/{{ video.link }}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    <figcaption><a href="https://player.vimeo.com/video/{{ video.link }}" target="_blank">{{ video.text }}</a></figcaption>
+    <iframe src="https://player.vimeo.com/video/{{ link }}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <figcaption><a href="https://vimeo.com/{{ link }}" target="_blank">{{ page.vid-titles[i] }}</a></figcaption>
 </figure>
 {% endfor %}
 
