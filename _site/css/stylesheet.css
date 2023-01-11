@@ -357,18 +357,10 @@ h5 {
 		background-color: black;
 	}
 
-	code {
-		display: block;
-		color: pink;
-		margin-top: 0.2em;
-		margin: 1em;
-		padding: 1em;
-		background-color: black;
-		overflow-wrap: break-word;
-		word-break: break-all;
-	}
-
-/* .dont-break-out {
+code {
+	display: block;
+	color: pink;
+	margin-top: 0.2em;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 	-ms-word-break: break-all;
@@ -378,7 +370,19 @@ h5 {
 	-moz-hyphens: auto;
 	-webkit-hyphens: auto;
 	hyphens: auto;
-} */
+}
+
+.dont-break-out {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
 
 aside {
 	margin: 5em 0;

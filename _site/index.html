@@ -124,6 +124,8 @@ ____________________________________________________
 	<h3 class="white-skewed-headline"><mark><a href="#about">L.E.A.R.N.</a></mark></h3>
 </section>
 
+<!-- About and Get Started sections -->
+
 <!-- ABOUT -->
 
 <!-- GET STARTED -->
@@ -161,7 +163,7 @@ _________________________________________________________
 <section id="get-started">
 	<h4 class="white-skewed-headline"><mark>Get Started</mark></h4>
 	<article>
-			
+		
 <!-- Keep these figure tags unindented, Jekyll interprets tabbed HTML as MD code blocks -->
 <!-- Iteratively get the videos -->
 
@@ -193,21 +195,24 @@ _________________________________________________________
 </ol>
 
 <p>Execute the commands below in Anaconda Prompt:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(base) conda config --add channels conda-forge
+
+<div class="language-plaintext terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(base) conda config --add channels conda-forge
 </code></pre></div></div>
 
 <h6 id="windows">Windows</h6>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(base) conda create -n learn python=3.8 compas_fab=0.17 --yes
+
+<div class="language-plaintext terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(base) conda create -n learn python=3.8 compas_fab=0.17 --yes
 (base) conda activate learn
 </code></pre></div></div>
 
 <h6 id="mac">Mac</h6>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(base) conda create -n learn python=3.8 compas_fab=0.17 python.app --yes
-(base) conda activate learn
-</code></pre></div></div>
+
+<p class="terminal"><code class="language-plaintext highlighter-rouge">(base) conda create -n learn python=3.8 compas_fab=0.17 python.app --yes</code>
+<code class="language-plaintext highlighter-rouge">(base) conda activate learn</code></p>
 
 <h6 id="verify-installation">Verify Installation</h6>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(learn) pip show compas_fab ####
+
+<div class="language-plaintext terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(learn) pip show compas_fab ####
 Name: compas-fab
 Version: 0.13.1
 Summary: Robotic fabrication package for the COMPAS Framework
@@ -215,37 +220,39 @@ Summary: Robotic fabrication package for the COMPAS Framework
 </code></pre></div></div>
 
 <h6 id="install-on-rhino">Install on Rhino</h6>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(learn) python -m compas_rhino.install
+
+<div class="language-plaintext terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(learn) python -m compas_rhino.install
 </code></pre></div></div>
 
 <p>NOTE: This installs to Rhino 6.0, use -v 5.0 if needed.</p>
 
-<ol>
+<ol start="2">
   <li>
     <h5 id="installation-of-dependencies">Installation of Dependencies</h5>
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(learn) conda install git
-</code></pre></div>    </div>
   </li>
 </ol>
 
-<h6 id="assembly-information-model">Assembly Information Model</h6>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(learn) python -m pip install git+https://github.com/augmentedfabricationlab/assembly_information_model@master#egg=assembly_information_model
-(learn) python -m compas_rhino.install -p assembly_information_model
+<div class="language-plaintext terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(learn) conda install git
 </code></pre></div></div>
+
+<h6 id="assembly-information-model">Assembly Information Model</h6>
+<!-- Use single line code mark to make sure that it doesn't overflow -->
+<p class="terminal"><code class="language-plaintext highlighter-rouge">(learn) python -m pip install git+https://github.com/augmentedfabricationlab/assembly_information_model@master#egg=assembly_information_model</code>
+<code class="language-plaintext highlighter-rouge">(learn) python -m compas_rhino.install -p assembly_information_model</code></p>
 
 <h6 id="ur-fabrication-control">UR Fabrication Control</h6>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(learn) python -m pip install git+https://github.com/augmentedfabricationlab/ur_fabrication_control@master#egg=ur_fabrication_control
-(learn) python -m compas_rhino.install -p ur_fabrication_control
-</code></pre></div></div>
 
-<ol>
+<p class="terminal"><code class="language-plaintext highlighter-rouge">(learn) python -m pip install git+https://github.com/augmentedfabricationlab/ur_fabrication_control@master#egg=ur_fabrication_control</code>
+<code class="language-plaintext highlighter-rouge">(learn) python -m compas_rhino.install -p ur_fabrication_control</code></p>
+
+<ol start="3">
   <li>
     <h5 id="cloning-the-course-repository">Cloning the Course Repository</h5>
   </li>
 </ol>
 
 <p>Create a workspace directory:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Users\YOUR_USERNAME\workspace
+<div class="language-plaintext terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Users\YOUR_USERNAME\workspace
 </code></pre></div></div>
 
 <p>Then open Github Desktop and clone the following repository into you workspace folder: <a href="https://github.com/le-ar-n/le-ar-n">L.E.A.R.N. repository</a></p>
