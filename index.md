@@ -80,7 +80,7 @@ Summary: Robotic fabrication package for the COMPAS Framework
 ```
 {: .terminal}
 
-NOTE: This installs to Rhino 6.0, use -v 5.0 if needed.
+NOTE: This installs to Rhino 6.0, use -v 5.0 or -v 7.0 if needed.
 
 {: start="2"}
 2. ##### Installation of Dependencies
@@ -100,6 +100,12 @@ NOTE: This installs to Rhino 6.0, use -v 5.0 if needed.
 
 `(learn) python -m pip install git+https://github.com/augmentedfabricationlab/ur_fabrication_control@master#egg=ur_fabrication_control`
 `(learn) python -m compas_rhino.install -p ur_fabrication_control`
+{: .terminal}
+
+###### ABB Fabrication Control
+    
+`(learn) conda install compas_rrc`
+`(learn) python -m compas_rhino.install -p compas_rrc`
 {: .terminal}
 
 {: start="3"}
