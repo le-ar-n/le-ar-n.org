@@ -20,7 +20,7 @@ vid-titles:
 
 In these tutorials, we will introduce computational methods for architecture, fabrication & construction, incentivising computational literacy. Students will learn the theoretical background and basic implementation details of fundamental datastructures and algorithms, and to plan and control robot tasks in CAD environments using the [COMPAS](https://compas.dev/) and [COMPAS FAB](https://gramaziokohler.github.io/compas_fab/latest/) framework, and other open-source libraries.
 
-We want to provide access to our tutorials for as many students as possible. If you are affiliated with TUM or Princeton, you can register for the class. If you are a student from another university or simply interested in Digital Fabrication using robots, you can simply access the tutorial videos through this webpage.
+We want to provide access to our tutorials for as many students as possible. If you are affiliated with TUM or EPFL, you can register for the class. If you are a student from another university or simply interested in Digital Fabrication using robots, you can simply access the tutorial videos through this webpage.
 <!-- END OF SECTION -->
 
 {% endcapture %}
