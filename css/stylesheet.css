@@ -417,6 +417,10 @@ summary {
 		color: #0ff;
 	}
 
+#docs section {
+	min-height: 0;
+}
+
 #docs summary {
 	border: 0.1em solid #ffc0cb;
 	margin-bottom: 1em;
@@ -475,6 +479,10 @@ summary {
 	#body code {
 		background-color: #000;
 		padding: 1em;
+	}
+
+	#body a, a:visited {
+		color: rgb(0, 229, 255);
 	}
 
 
