@@ -151,7 +151,18 @@ ______________________________________________________
 					<figcaption><a href="https://vimeo.com/{{ link }}" target="_blank">{{ session.vid-titles[i] }}</a></figcaption>
 				</figure>
 			{% endfor %}
-			{{ session.content | markdownify }}
+			{% assign content = session.content | strip_newlines %}
+			{% if content != "" %}
+				<details id="docs"> 
+					<summary>
+						Documentation
+					</summary>
+					<section id="body">
+						{{ session.content | markdownify }}
+					</section>
+				</details>
+			{% endif %}
+			
 		</details>
 		{% endfor %}
 	</article>

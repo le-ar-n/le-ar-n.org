@@ -416,7 +416,74 @@ summary {
 		background-color: #ffc0cb;
 		color: #0ff;
 	}
-	
+
+#docs section {
+	min-height: 0;
+}
+
+#docs summary {
+	border: 0.1em solid #ffc0cb;
+	margin-bottom: 1em;
+	transition: background-color 0.5s;
+	background-color: #0ff;
+	padding: 1%;
+	color: #ffc0cb;
+	font-size: 2.5em;
+}
+
+	#docs summary:hover {
+		cursor: pointer;
+		background-color: #ffc0cb;
+		color: #0ff;
+	}
+
+#body {
+	margin: 0 0 4em 0;
+	padding: 2em;
+	border: 0.25em solid #ffc0cb;
+	background-color: #fff;
+	line-height: 1.5;
+}
+
+	#body h2 {
+		font-size: 2.5em;
+		margin-top: 1em;
+		margin-bottom: .5em;
+	}
+
+	#body h3 {
+		font-size: 2em;
+	}
+
+	#body p {
+		margin-bottom: 1em;
+	}
+
+	#body ul {
+		margin-bottom: .5em;
+		padding-left: 2em;
+	}
+		#body li {
+			margin: .5em 0 .5em 0;
+		}
+
+	#body table, #body th, #body td {
+		border: 1px solid;
+		border-collapse: collapse;
+	}
+
+	#body th, #body td {
+		padding: 1em;
+	}
+
+	#body code {
+		background-color: #000;
+		padding: 1em;
+	}
+
+	#body a, a:visited {
+		color: rgb(0, 229, 255);
+	}
 
 
 /*
