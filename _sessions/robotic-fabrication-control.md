@@ -15,4 +15,3 @@ order: 8
 
 * [COMPAS RRC](https://compas-rrc.github.io/compas_rrc/latest/)
 * [RobotStudio](https://new.abb.com/products/robotics/robotstudio/downloads)
-
