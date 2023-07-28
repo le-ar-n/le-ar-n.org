@@ -16,4 +16,5 @@ order: 7
 
 * [COMPAS FAB](https://gramaziokohler.github.io/compas_fab/latest/)
 * [Docker Desktop](https://www.docker.com/products/docker-desktop)
-* [Repository containing Docker image and Grasshopper playground(last updated 09/02/2023)](https://github.com/le-ar-n/le-ar-n/tree/64600ee3bbe7e42f87f28442923b216cc565cf24/code)
+* [Repository containing Docker image (last updated 09/02/2023)](https://github.com/le-ar-n/le-ar-n/tree/64600ee3bbe7e42f87f28442923b216cc565cf24/code)
+* [Grasshopper playground](https://gramaziokohler.github.io/compas_fab/latest/examples/03_backends_ros/06_ros_in_grasshopper.html)
